@@ -1,12 +1,17 @@
-NAMES = ["John", "Paul", "George", "Ringo"]
+NAMES = ["John", "Paul", "George", "Ringo", "Jones", "Baker", "Sully"]
 AGES = [20, 21, 22, 23]
 
 JOHN = NAMES[0]
 PAUL = NAMES[1]
 
-JOHN_PAUL = NAMES[:2]
+# [:] means trim from! Such Trim from 0 and 4
+JOHN_PAUL = NAMES[1:3]
+# trim the first 2 and leave the rest
 GEORGE_RINGO = NAMES[2:]
 REVERSE = NAMES[::-1]
+# reverse names and display display every second one
+REVERSE = NAMES[::-2]
+
 EVERY_OTHER = NAMES[::2]
 
 print(sum(AGES))
